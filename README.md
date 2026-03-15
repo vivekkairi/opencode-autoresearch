@@ -55,14 +55,6 @@ cp skills/autoresearch-create/SKILL.md ~/.config/opencode/skills/autoresearch-cr
 4. Keep improvements with `status=keep` (auto-commit enabled).
 5. Use `/autoresearch-status` to inspect progress.
 
-## Files produced during sessions
-
-- `autoresearch.jsonl` - append-only run and config history
-- `autoresearch.md` - session instructions and context (recommended)
-- `autoresearch.sh` - benchmark script (recommended)
-- `autoresearch.checks.sh` - optional checks gate
-- `autoresearch.ideas.md` - deferred ideas backlog
-
 ## Notes
 
 - `keep` is blocked when `autoresearch.checks.sh` fails.
