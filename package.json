@@ -1,0 +1,38 @@
+{
+  "name": "opencode-autoresearch",
+  "version": "0.1.0",
+  "description": "Autonomous experiment loop plugin for OpenCode, inspired by karpathy/autoresearch and pi-autoresearch.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "opencode",
+    "plugin",
+    "autoresearch",
+    "benchmark",
+    "automation"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "skills",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "smoke": "npm run build && node scripts/smoke-test.mjs"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.2.26"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
+  }
+}
